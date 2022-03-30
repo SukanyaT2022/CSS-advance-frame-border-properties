@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .border {
+        height: 300px;
+        width: 300px;
+        margin: 30px auto;
+
+        border: 50px solid pink;
+        border-image-source: url("/frame2-removebg-preview\ \(2\).png");
+        border-image-slice: 50;
+        
+    }
+    .withoutRemoveBG{
+height: 400px;
+width: 400px;
+border: 50px solid green;
+
+background-color: pink;
+border-image-source: url("without\ remove\ bg\ pic.jpeg");
+border-image-slice: 30;
+border-image-repeat:stretch;
+ /* piock one-repeat or space mean border have space every 30px,
+  or use round for perfect border, or use stretch */
+border-image-outset:30px;
+padding: 30px;
+    }
+
+
+</style>
+
+
+
+<body>
+    <div class="border">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quisquam aperiam soluta, tempora tempore ut
+            blanditiis deleniti delectus nobis. Molestias voluptates, reprehenderit sit qui suscipit, odio accusantium
+            reiciendis doloremque, inventore temporibus nostrum sequi illo quas atque commodi odit nam ad incidunt
+            veritatis cum ipsam. Quibusdam commodi recusandae maiores totam ducimus.
+        </p>
+    </div>
+
+
+    <body>
+        <div class="withoutRemoveBG">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quisquam aperiam soluta, tempora tempore ut
+                blanditiis deleniti delectus nobis. Molestias voluptates, reprehenderit sit qui suscipit, odio accusantium
+                reiciendis doloremque, inventore temporibus nostrum sequi illo quas atque commodi odit nam ad incidunt
+                veritatis cum ipsam. Quibusdam commodi recusandae maiores totam ducimus.
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quisquam aperiam soluta, tempora tempore ut
+                blanditiis deleniti delectus nobis. Molestias voluptates, reprehenderit sit qui suscipit, odio accusantium
+                reiciendis doloremque, inventore temporibus nostrum sequi illo quas atque commodi odit nam ad incidunt
+                veritatis cum ipsam. Quibusdam commodi recusandae maiores totam ducimus.
+            </p>
+        </div>
+    
+
+
+
+</body>
+
+</html>
